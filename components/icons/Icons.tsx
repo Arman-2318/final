@@ -30,7 +30,6 @@ export const AmbulanceIcon = ({ className }: { className?: string }) => (
     <path strokeLinecap="round" strokeLinejoin="round" d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10l2.5-1.5L8 17l2.5-1.5L13 16z" />
     <path strokeLinecap="round" strokeLinejoin="round" d="M8 11h4M10 9v4" />
     <path strokeLinecap="round" strokeLinejoin="round" d="M19 16h2a1 1 0 001-1V6a1 1 0 00-1-1h-3.28a1 1 0 00-.948.684l-1.788 4.47A1 1 0 0015 11h-2" />
-    />
   </svg>
 );
 

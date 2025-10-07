@@ -1,3 +1,4 @@
+
 import React, { createContext, useContext, useState, useCallback, ReactNode } from 'react';
 import { ToastContextType, ToastMessage, ToastType } from '../types';
 
@@ -19,11 +20,10 @@ export const ToastProvider: React.FC<{ children: ReactNode }> = ({ children }) =
         }, 5000); // Auto-dismiss after 5 seconds
     }, [removeToast]);
 
-    return (
-        <ToastContext.Provider value={{ toasts, addToast, removeToast }}>
-            {children}
-        </ToastContext.Provider>
-    );
+    // FIX: Replaced JSX with React.createElement to resolve parsing errors.
+    // The TypeScript compiler cannot parse JSX in a .ts file, which caused multiple errors.
+    // Using React.createElement directly is the correct approach without renaming the file.
+    return React.createElement(ToastContext.Provider, { value: { toasts, addToast, removeToast } }, children);
 };
 
 export const useToast = () => {
