@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MediCare+ Hospital</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: {
+                DEFAULT: '#2563EB', // A more modern, friendly blue
+                light: '#EFF6FF',
+                dark: '#1D4ED8',
+              },
+              secondary: {
+                DEFAULT: '#10B981', // A calm, vibrant teal
+                dark: '#059669',
+              },
+              accent: {
+                DEFAULT: '#FBBF24', // A warm, inviting yellow
+                dark: '#F59E0B',
+              },
+              text: {
+                DEFAULT: '#1F2937', // Dark slate for body copy
+                light: '#6B7280', // Lighter gray for secondary text
+              },
+              base: {
+                100: '#FFFFFF',
+                200: '#F9FAFB', // A very light gray for off-white backgrounds
+                300: '#F3F4F6',
+              }
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              serif: ['Georgia', 'serif'],
+            }
+          }
+        }
+      }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        background-color: #F9FAFB;
+        background-image:
+          radial-gradient(circle at 1px 1px, #E5E7EB 1px, transparent 0);
+        background-size: 2rem 2rem;
+      }
+      .table-responsive {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
